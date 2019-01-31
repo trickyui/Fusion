@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>|| Fusion ||</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles"></div>
+    <div class="landing-box text-center">
+        <div class="clearfix top">
+            <figure class="pull-left">
+                <img src="assets/images/landing-logo.svg" alt="Fusion logo" class="img-responsive">
+                <figcaption>beta</figcaption>
+            </figure>
+            <div class="pull-right dropdown">
+                <a href="#" class="dropdown-toggle icon-btn d-ib" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/profile-thumb.jpg" alt="User image" class="img-responsive d-ib"> <div class="d-ib text-uppercase text-right">Vikash Chauhan</div>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal" data-target="#changePassword"> Change Password</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="list-unstyled clearfix module-list">
+            <li>
+                <a href="action-plan.html">
+                    <figure>
+                        <img src="assets/images/action-plan.svg" alt="Action Plan" class="img-responsive">
+                        <figcaption>Action Plan</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="dox.html">
+                    <figure>
+                        <img src="assets/images/dox.svg" alt="Documetns" class="img-responsive">
+                        <figcaption>Documetns</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="assets/images/maintenance.svg" alt="Maintenance" class="img-responsive">
+                        <figcaption>Maintenance</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="audit-grid.html">
+                    <figure>
+                        <img src="assets/images/quality.svg" alt="Quality" class="img-responsive">
+                        <figcaption>Quality</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="records-personnel-pv.html">
+                    <figure>
+                        <img src="assets/images/records.svg" alt="Records" class="img-responsive">
+                        <figcaption>Records</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="risk.html">
+                    <figure>
+                        <img src="assets/images/risk.svg" alt="Risk" class="img-responsive">
+                        <figcaption>Risk</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="roster.html">
+                    <figure>
+                        <img src="assets/images/roster.svg" alt="Roster" class="img-responsive">
+                        <figcaption>Roster</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="assets/images/safety.svg" alt="Safety" class="img-responsive">
+                        <figcaption>Safety</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="assets/images/settings.svg" alt="Settings" class="img-responsive">
+                        <figcaption>Settings</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="users.html">
+                    <figure>
+                        <img src="assets/images/user.svg" alt="Users" class="img-responsive">
+                        <figcaption>Users</figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-footer text-center">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+    </div>
+    <!-- Modal Change Password -->
+    <div class="modal fade" id="changePassword" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Change Password</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" class="form-control" id="currentPassword" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" class="form-control" id="newPassword" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="spiner"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>     <script src="assets/js/jquery.touchwipe.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/particles-app.js"></script>
+    <script>
+        $(window).load(function () {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
+</body>
+
+</html>

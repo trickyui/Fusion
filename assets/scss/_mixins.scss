@@ -1,0 +1,285 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin ltrPosition($top, $left) {
+  top: $top;
+  left: $left;
+}
+@mixin rtlPosition($top, $right) {
+  top: $top;
+  right: $right;
+}
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+    -moz-transition: $transition;
+      -ms-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+    -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+      -ms-box-shadow: $shadows;
+        -o-box-shadow: $shadows;
+            box-shadow: $shadows;
+}
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+       -o-animation: $animation;
+          animation: $animation;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+@mixin panel-name($val) {
+  @if $val == dox {
+    & {
+      background-color: $Blue50;
+    }
+    .item-list > li > a {
+      padding-right: $baseSize * 2;
+      &::after {
+        background-color: $Blue100;
+      }
+      &:focus, &.active {
+        background-color: $Blue500;
+      }
+    }
+    .sub-item-list > li > a {
+      color: $Blue500;
+      &::after {
+        background-color: $Blue100;
+      }
+    }
+  }
+  @else if $val == action_plan {
+    & {
+      background-color: $Teal50;
+    }
+    .item-list > li > a {
+      padding-right: $baseSize * 2;
+      &::after {
+        background-color: $Teal100;
+      }
+      &:focus, &.active {
+        background-color: $Teal500;
+      }
+    }
+    .sub-item-list > li > a {
+      color: $Teal500;
+      &::after {
+        background-color: $Teal100;
+      }
+    }
+  }
+  @else if $val == audit or $val == checklist or $val == auditee {
+    & {
+      background-color: $Indigo50;
+    }
+    .item-list > li > a {
+      padding-right: $baseSize * 2;
+      &::after {
+        background-color: $Indigo100;
+      }
+      &:focus, &.active {
+        background-color: $Indigo500;
+      }
+    }
+    .sub-item-list > li > a {
+      color: $Indigo500;
+      &::after {
+        background-color: $Indigo100;
+      }
+    }
+  }
+  @else if $val == records{
+    & {
+      background-color: $Amber50;
+    }
+    .item-list > li > a {
+      padding-right: $baseSize * 2;
+      &::after {
+        background-color: $Amber100;
+      }
+      &:focus, &.active {
+        background-color: $Amber500;
+      }
+    }
+    .sub-item-list > li > a {
+      color: $Amber500;
+      padding: 0 32px;
+      &::after {
+        background-color: $Amber100;
+      }
+    }
+  }
+  @else if $val == users {
+    & {
+      background-color: $Brown50;
+    }
+    .item-list > li > a {
+      &::after {
+        background-color: $Brown100;
+      }
+      &:focus, &.active {
+        background-color: $Brown500;
+      }
+    }
+  }
+  @else if $val == roster {
+    & {
+      background-color: $BlueGrey50;
+    }
+    .item-list > li > a {
+      &::after {
+        background-color: $BlueGrey100;
+      }
+      &:focus, &.active {
+        background-color: $BlueGrey500;
+      }
+    }
+  }
+  @else if $val == risk {
+    & {
+      background-color: $Amber50;
+    }
+    .item-list > li > a {
+      &::after {
+        background-color: $Amber100;
+      }
+      &:focus, &.active {
+        background-color: $Amber500;
+      }
+    }
+  }
+  @else {
+    // Do Something
+  }
+}
+@mixin appearance($val) {
+  -webkit-appearance: $val;
+  -o-appearance: $val;
+  appearance: $val;
+}
+@mixin card-color($color) {
+  @if $color == dox {
+    .card-list > li > .card {
+      background-color: $Blue50;
+    }
+  }
+  @else if $color == action_plan {
+    .card-list > li > .card {
+      background-color: $Teal50;
+    }
+  }
+  @else if $color == audit or $color == checklist or $color == auditee {
+    .card-list > li > .card {
+      background-color: $Indigo50;
+    }
+  }
+  @else if $color == records {
+    .card-list > li > .card {
+      background-color: $Amber50;
+      &.red {
+        color: $Red500;
+      }
+      &.amber {
+        color: $Amber700;
+      }
+    }
+  }
+  @else if $color == roster {
+    .card-list > li > .card {
+      background-color: transparentize($primaryColor, 0.95);
+    }
+  }
+  @else {
+    background-color: $white;
+    border-color: $Grey100;
+  }
+}
+@mixin form-header($color) {
+  @if $color == dox {
+    .form-card .form-header {
+      background-color: $Blue50;
+    }
+  }
+  @else if $color == action_plan {
+    .form-card .form-header {
+      background-color: $Teal50;
+    }
+  }
+  @else if $color == audit or $color == checklist or $color == auditee {
+    .form-card .form-header {
+      background-color: $Indigo50;
+    }
+  }
+  @else if $color == records {
+    .form-card .form-header {
+      background-color: $Amber50;
+    }
+  }
+  @else if $color == users {
+    .form-card .form-header {
+      background-color: $Brown50;
+    }
+  }
+  @else if $color == roster {
+    .form-card .form-header {
+      background-color: $BlueGrey50;
+    }
+  }
+  @else if $color == risk {
+    .form-card .form-header {
+      background-color: $Amber50;
+    }
+  }
+  @else {
+    .form-card .form-header {
+      background-color: $Grey50;
+    }
+  }
+}
+@mixin alert-record($alertColor) {
+  @if $alertColor == red {
+    & {
+      background-color: #fdb3ae;
+      border-color: #f44336;
+    }
+  }
+  @else if $alertColor == green {
+    & {
+      background-color: #a7ffeb;
+      border-color: #1de9b6;
+    }
+  }
+  @else {
+    background-color: #fff8e1;
+    border-color: #ffc107;
+  }
+}

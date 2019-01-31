@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/MaterialIcons-Regular.woff) format('woff'), url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    color: $Grey700;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+}
+
+@font-face {
+    font-family: 'fusion';
+    src: url('../fonts/fusion.eot');
+    src: url('../fonts/fusion.eot?kjbjvv#iefix') format('embedded-opentype'), url('../fonts/fusion.ttf?kjbjvv') format('truetype'), url('../fonts/fusion.woff?kjbjvv') format('woff'), url('../fonts/fusion.svg?kjbjvv#fusion') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="fusion-"],
+[class*=" fusion-"] {
+    font-family: 'fusion' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fusion-checked:before {
+    content: "\e900";
+}
+
+.fusion-copy:before {
+    content: "\e901";
+}
+
+.fusion-csv:before {
+    content: "\e902";
+}
+
+.fusion-excel:before {
+    content: "\e903";
+}
+
+.fusion-pdf:before {
+    content: "\e904";
+}
+
+.fusion-print:before {
+    content: "\e905";
+}
+
+.fusion-unchecked:before {
+    content: "\e906";
+}
+
+.fusion-word:before {
+    content: "\e907";
+}
+
+@font-face {
+    font-family: 'fileShare';
+    src: url('../fonts/file-share.eot?hfqcue');
+    src: url('../fonts/file-share.eot?hfqcue#iefix') format('embedded-opentype'), url('../fonts/file-share.ttf?hfqcue') format('truetype'), url('../fonts/file-share.woff?hfqcue') format('woff'), url('../fonts/file-share.svg?hfqcue#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.file-share {
+    font-family: 'fileShare' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.file-share:before {
+    content: "\e900";
+    padding: 0 2px;
+    width: 20px;
+    font-size: 18px !important;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?xqrl2a');
+    src: url('../fonts/icomoon.eot?xqrl2a#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?xqrl2a') format('truetype'), url('../fonts/icomoon.woff?xqrl2a') format('woff'), url('../fonts/icomoon.svg?xqrl2a#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-m"],
+[class*=" icon-m"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 20px !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-filter:before {
+    content: "\e900";
+}

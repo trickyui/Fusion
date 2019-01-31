@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>|| Fusion ||</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/token-input.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="clearfix">
+        <ul class="pull-left list-unstyled left-nav">
+            <li><a class="icon-btn nav-open"><i class="material-icons">menu</i></a></li>
+            <li><a href="#" id="_back" class="icon-btn"><i class="material-icons">keyboard_backspace</i></a></li>
+            <li>Quality</li>
+            <li><i class="material-icons">domain</i></li>
+        </ul>
+        <nav id="navigation">
+            <div class="nav-header clearfix">
+                <div class="text-right"><a href="#" class="nav-close"><i class="material-icons">clear</i></a></div>
+                <div class="col-sm-6 col-xs-6">
+                    <img src="assets/images/fusion-logo.svg" alt="Fusion" class="img-responsive logo">
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <ul class="list-unstyled text-right">
+                        <li>Hi Vikash</li>
+                        <li><a href="#" data-toggle="modal" data-target="#changePassword">Change
+                                Password</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="landing.html"><img src="assets/images/home.svg" alt="Home">Home</a></li>
+                <li><a href="action-plan.html"><img src="assets/images/action-plan.svg" alt="Action Plan">Action Plan</a></li>
+                <li><a href="dox.html"><img src="assets/images/dox.svg" alt="Documents">Documents</a></li>
+                <li><a href="#"><img src="assets/images/maintenance.svg" alt="Maintenance">Maintenance</a></li>
+                <li><a href="audit-grid.html"><img src="assets/images/quality.svg" alt="Quality">Quality</a></li>
+                <li><a href="records-personnel-pv.html"><img src="assets/images/records.svg" alt="Records">Records</a></li>
+                <li><a href="risk.html"><img src="assets/images/risk.svg" alt="Risk">Risk</a></li>
+                <li><a href="roster.html"><img src="assets/images/roster.svg" alt="Roster">Roster</a></li>
+                <li><a href="#"><img src="assets/images/safety.svg" alt="Safety">Safety</a></li>
+                <li><a href="users.html"><img src="assets/images/user.svg" alt="Users">Users</a></li>
+            </ul>
+        </nav>
+        <div class="pull-right">
+            <div class="pull-right dropdown">
+                <a href="#" class="dropdown-toggle icon-btn" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="audit-grid.html">Audit</a></li>
+                    <li><a href="checklist-grid.html">Checklist</a></li>
+                    <li class="active"><a href="auditee.html">Auditee</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-toggle="modal" data-target="#addCatModal">Add Category</a></li>
+                    <li><a href="#">Edit Category</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#addAuditeeModal">Add Auditee</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Delete</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="panelOne" class="panel-1 swipeNav" data-name="auditee">
+            <div class="wrapper">
+                <ul class="list-unstyled item-list">
+                    <ul class="list-unstyled item-list">
+                        <li><a href="#">All Auditees</a></li>
+                        <li><a href="#" class="active">Aircraft</a></li>
+                        <li><a href="#">APU</a></li>
+                        <li><a href="#">ETC</a></li>
+                        <li><a href="#">Mining</a></li>
+                        <li><a href="#">Organization</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div id="panelTwo" class="panel-2" data-name="auditee">
+            <div class="wrapper">
+                <ul class="list-unstyled item-list">
+                    <li><a href="#" class="active">Sub-01</a></li>
+                    <li><a href="#">test 1</a></li>
+                    <li><a href="#">test 2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="panelThree" class="panel-3" data-name="auditee">
+            <div class="wrapper form-container pb-50">
+                <ul class="list-unstyled">
+                    <li class="list-items">
+                        <div class="form-card">
+                            <h3 class="form-header">Auditee Details</h3>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label>Auditee ID <span class="sup text-danger">*</span></label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Organization <span class="sup text-danger">*</span></label>
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>Allen Solly</option>
+                                        <option>Antonio</option>
+                                        <option>Barcalays</option>
+                                        <option>Dallus</option>
+                                        <option>Media</option>
+                                        <option>Microsoft</option>
+                                        <option>Google</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="d-ib" data-toggle="modal" data-target="#addOrganizationModal"><i
+                                            class="material-icons primary-icon">add_circle</i> Add
+                                        Organization</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-items">
+                        <div class="form-card">
+                            <h3 class="form-header">Custom Details</h3>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label>Air Pressure</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Volume</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Friction</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Modal Add Auditee -->
+    <div class="modal fade" id="addAuditeeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Add Auditee</span>
+                </div>
+                <div class="modal-body form-container">
+                    <ul class="list-unstyled">
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Auditee Details</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Auditee ID <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Organization <span class="sup text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option>Select</option>
+                                            <option>Allen Solly</option>
+                                            <option>Antonio</option>
+                                            <option>Barcalays</option>
+                                            <option>Dallus</option>
+                                            <option>Media</option>
+                                            <option>Microsoft</option>
+                                            <option>Google</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#" class="d-ib" data-toggle="modal" data-target="#addOrganizationModal"><i
+                                                class="material-icons primary-icon">add_circle</i> Add
+                                            Organization</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Custom Details</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Air Pressure</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Volume</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Friction</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Add Organization -->
+    <div class="modal fade" id="addOrganizationModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Add Organization</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Organization Name <span class="sup text-danger">*</span></label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Add Category -->
+    <div class="modal fade" id="addCatModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Add Category</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Category <span class="sup text-danger">*</span></label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Field Label <span class="sup text-danger">*</span></label>
+                        <input type="text" class="form-control bb-0" placeholder="Label here...">
+                        <div class="textarea-wrapper">
+                            <textarea class="form-control" maxlength="500" placeholder="Text here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="clearfix">
+                            <label>Field Label <span class="sup text-danger">*</span></label>
+                            <a href="#" class="pull-right">Remove</a>
+                        </div>
+                        <input type="text" class="form-control bb-0" placeholder="Label here...">
+                        <div class="textarea-wrapper">
+                            <textarea class="form-control" maxlength="500" placeholder="Text here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="d-ib"><i class="material-icons primary-icon">add_circle</i> Add Label</a>
+                    </div>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Item -->
+    <div class="modal fade" id="addItemModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Add Item</span>
+                </div>
+                <div class="modal-body form-container">
+                    <ul class="list-unstyled">
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Criteria</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Item <span class="sup text-danger">*</span></label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="2000" placeholder="Text here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Requirement</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000" placeholder="Text here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Guidance</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000" placeholder="Text here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Type</label>
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="14">Normal</option>
+                                            <option value="15">Essential</option>
+                                            <option value="273">Reservation and resources</option>
+                                            <option value="274">Essentially and importantly recommended</option>
+                                            <option value="295">Important</option>
+                                            <option value="296">Mandatory</option>
+                                            <option value="297">Ascertain</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <ul class="list-unstyled column-list">
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Advanced</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Item Grades</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="label-primary">Item Grades</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <ul class="list-unstyled column-list">
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Low</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Medium</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>High</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Extreme</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Tgrade31A</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Moderate</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Preliminary</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>In
+                                                Process</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Scheduled</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Minimum</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Closed</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Main</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Deferred</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Duty</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>RestAPI</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header clearfix">Non Conformity (Pre determined)</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Finding</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000" placeholder="Text here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="clearfix">
+                                            <label>Grade</label>
+                                            <i class="material-icons pull-right small">lens</i>
+                                        </div>
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="1">Low</option>
+                                            <option value="2">Medium</option>
+                                            <option value="3">High</option>
+                                            <option value="5">Extreme</option>
+                                            <option value="7">Moderate</option>
+                                            <option value="8">Preliminary</option>
+                                            <option value="9">In Process</option>
+                                            <option value="11">Minimum</option>
+                                            <option value="12">Closed</option>
+                                            <option value="13">Main</option>
+                                            <option value="14">Deferred</option>
+                                            <option value="15">Duty</option>
+                                            <option value="16">RestAPI</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#" class="d-ib"><i class="material-icons primary-icon">add_circle</i>
+                                            Non
+                                            Conformity(Pre determined)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header clearfix">Non Conformity(Pre determined) <a href="#" class="pull-right"><i
+                                            class="material-icons">clear</i></a></h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Finding</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000" placeholder="Text here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="clearfix">
+                                            <label>Grade</label>
+                                            <i class="material-icons pull-right small">lens</i>
+                                        </div>
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="1">Low</option>
+                                            <option value="2">Medium</option>
+                                            <option value="3">High</option>
+                                            <option value="5">Extreme</option>
+                                            <option value="7">Moderate</option>
+                                            <option value="8">Preliminary</option>
+                                            <option value="9">In Process</option>
+                                            <option value="11">Minimum</option>
+                                            <option value="12">Closed</option>
+                                            <option value="13">Main</option>
+                                            <option value="14">Deferred</option>
+                                            <option value="15">Duty</option>
+                                            <option value="16">RestAPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Summary -->
+    <div class="modal fade" id="summaryModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Summary</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control bb-0" placeholder="Label here...">
+                        <div class="textarea-wrapper">
+                            <textarea class="form-control" maxlength="5000" placeholder="Text here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control bb-0" placeholder="Label here...">
+                        <div class="textarea-wrapper">
+                            <textarea class="form-control" maxlength="5000" placeholder="Text here..."></textarea>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" class="d-ib">Delete</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control bb-0" placeholder="Label here...">
+                        <div class="textarea-wrapper">
+                            <textarea class="form-control" maxlength="5000" placeholder="Text here..."></textarea>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" class="d-ib">Delete</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="d-ib"><i class="material-icons primary-icon">add_circle</i> Add Summary</a>
+                    </div>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal File -->
+    <div class="modal fade" id="fileModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">File</span>
+                </div>
+                <div class="modal-body form-container">
+                    <ul class="list-unstyled">
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header clearfix">Checklist <span class="pull-right">Rev 11, 19 Dec 2017</span></h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Checklist ID <span class="sup text-danger">*</span></label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <select class="form-control">
+                                            <option>Draft</option>
+                                            <option>Active</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Who can edit this checklist</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Can View</label>
+                                        <div class="token-wrapper">
+                                            <input type="text" class="form-control" data-name="token-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Can Edit</label>
+                                        <div class="token-wrapper">
+                                            <input type="text" class="form-control" data-name="token-input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Grading Limit</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="label-primary">Grade</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <ul class="list-unstyled column-list">
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Low</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Medium</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>High</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Extreme</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Tgrade31A</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Moderate</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Preliminary</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>In
+                                                Process</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Scheduled</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Minimum</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Closed</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Main</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Deferred</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Duty</li>
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>RestAPI</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="spiner"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.touchwipe.min.js"></script>
+    <script src="assets/js/jquery.tokeninput.js"></script>
+    <script>
+        $(function () {
+            $("[data-name='token-input']").tokenInput(
+                [
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                ],
+                {
+                    onReady: function () {
+                        var i = 0;
+                        $('.token-wrapper').each(function () {
+                            $(this).find('input#token-input-').attr('id', 'token-input-' + i++);
+                        });
+                    }
+                }
+            );
+        });
+    </script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>

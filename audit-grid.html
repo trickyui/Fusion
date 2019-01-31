@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>|| Fusion ||</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="clearfix">
+        <ul class="pull-left list-unstyled left-nav">
+            <li><a class="icon-btn nav-open"><i class="material-icons">menu</i></a></li>
+            <!-- <li><a href="#" id="_back" class="icon-btn"><i class="material-icons">keyboard_backspace</i></a></li> -->
+            <li>Quality</li>
+            <li><i class="material-icons">find_in_page</i></li>
+        </ul>
+        <nav id="navigation">
+            <div class="nav-header clearfix">
+                <div class="text-right"><a href="#" class="nav-close"><i class="material-icons">clear</i></a></div>
+                <div class="col-sm-6 col-xs-6">
+                    <img src="assets/images/fusion-logo.svg" alt="Fusion" class="img-responsive logo">
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <ul class="list-unstyled text-right">
+                        <li>Hi Vikash</li>
+                        <li><a href="#" data-toggle="modal" data-target="#changePassword">Change
+                                Password</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="landing.html"><img src="assets/images/home.svg" alt="Home">Home</a></li>
+                <li><a href="action-plan.html"><img src="assets/images/action-plan.svg" alt="Action Plan">Action Plan</a></li>
+                <li><a href="dox.html"><img src="assets/images/dox.svg" alt="Documents">Documents</a></li>
+                <li><a href="#"><img src="assets/images/maintenance.svg" alt="Maintenance">Maintenance</a></li>
+                <li><a href="#"><img src="assets/images/quality.svg" alt="Quality">Quality</a></li>
+                <li><a href="records-personnel-pv.html"><img src="assets/images/records.svg" alt="Records">Records</a></li>
+                <li><a href="risk.html"><img src="assets/images/risk.svg" alt="Risk">Risk</a></li>
+                <li><a href="roster.html"><img src="assets/images/roster.svg" alt="Roster">Roster</a></li>
+                <li><a href="#"><img src="assets/images/safety.svg" alt="Safety">Safety</a></li>
+                <li><a href="users.html"><img src="assets/images/user.svg" alt="Users">Users</a></li>
+            </ul>
+        </nav>
+        <div class="pull-right">
+            <div class="dropdown pull-right">
+                <a href="#" class="dropdown-toggle icon-btn" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="audit.html">Column View</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#newAudit">New Audit</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#downloadModal">Download</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#manageColModal">Manage Column</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div id="panelThree" class="panel-3 swipeNav" data-name="audit">
+            <div class="wrapper">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="cardSearch" placeholder="Search here...">
+                </div>
+                <ul class="list-unstyled card-list" id="searchList">
+                    <li>
+                        <a href="audit.html" class="card">
+                            <ul class="list-unstyled">
+                                <li>Audit ID: TestAuditID-26</li>
+                                <li>Checklist ID: TestChecklistID-12</li>
+                                <li>Start Date: 2018-07-06</li>
+                                <li>End Date: 2018-07-19</li>
+                                <li>Auditee ID: Auditee_0902</li>
+                                <li>Team Leader: John Carter</li>
+                                <li>Audit Status: Closed</li>
+                                <li>Created By: Ishita Rawat</li>
+                            </ul>
+                        </a>
+                        <div class="card-options">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Open</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="card">
+                            <ul class="list-unstyled">
+                                <li>Audit ID: TestAuditID-26</li>
+                                <li>Checklist ID: TestChecklistID-12</li>
+                                <li>Start Date: 2018-07-06</li>
+                                <li>End Date: 2018-07-19</li>
+                                <li>Auditee ID: Auditee_0902</li>
+                                <li>Team Leader: John Carter</li>
+                                <li>Audit Status: Closed</li>
+                                <li>Created By: Ishita Rawat</li>
+                            </ul>
+                        </a>
+                        <div class="card-options">
+                            <a href="#" class="card-action active"><i class="material-icons">lock</i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="card">
+                            <ul class="list-unstyled">
+                                <li>Audit ID: TestAuditID-26</li>
+                                <li>Checklist ID: TestChecklistID-12</li>
+                                <li>Start Date: 2018-07-06</li>
+                                <li>End Date: 2018-07-19</li>
+                                <li>Auditee ID: Auditee_0902</li>
+                                <li>Team Leader: John Carter</li>
+                                <li>Audit Status: Closed</li>
+                                <li>Created By: Ishita Rawat</li>
+                            </ul>
+                        </a>
+                        <div class="card-options">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Open</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="card">
+                            <ul class="list-unstyled">
+                                <li>Audit ID: TestAuditID-26</li>
+                                <li>Checklist ID: TestChecklistID-12</li>
+                                <li>Start Date: 2018-07-06</li>
+                                <li>End Date: 2018-07-19</li>
+                                <li>Auditee ID: Auditee_0902</li>
+                                <li>Team Leader: John Carter</li>
+                                <li>Audit Status: Closed</li>
+                                <li>Created By: Ishita Rawat</li>
+                            </ul>
+                        </a>
+                        <div class="card-options">
+                            <a href="#" class="card-action active"><i class="material-icons">lock</i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="card">
+                            <ul class="list-unstyled">
+                                <li>Audit ID: TestAuditID-26</li>
+                                <li>Checklist ID: TestChecklistID-12</li>
+                                <li>Start Date: 2018-07-06</li>
+                                <li>End Date: 2018-07-19</li>
+                                <li>Auditee ID: Auditee_0902</li>
+                                <li>Team Leader: John Carter</li>
+                                <li>Audit Status: Closed</li>
+                                <li>Created By: Ishita Rawat</li>
+                            </ul>
+                        </a>
+                        <div class="card-options">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Open</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Modal New Audit -->
+    <div class="modal fade" id="newAudit" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">New Audit</span>
+                </div>
+                <div class="modal-body form-container">
+                    <ul class="list-unstyled">
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Audit Details</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Audit ID <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Checklist ID <span class="sup text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option>Select</option>
+                                            <option>Checklist ID-1</option>
+                                            <option>Checklist ID-2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Start Date <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>End Date <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Location</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <div class="autocomplete">
+                                            <input id="searchCountry" class="form-control" type="text" name="myCountry"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Auditee Details</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Auditee ID <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Focal Person <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header">Audit Team</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Team Leader <span class="sup text-danger">*</span></label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Member 1</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="clearfix">
+                                            <label>Member 2</label>
+                                            <a href="#" class="pull-right">Remove</a>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="#" class="d-ib"><i class="material-icons primary-icon">add_circle</i>Add
+                                            Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal downloads -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Download</span>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled download-list">
+                        <li><a href="#"><i class="fusion-word"></i> Word</a></li>
+                        <li><a href="#"><i class="fusion-excel"></i> Excel</a></li>
+                        <li><a href="#"><i class="fusion-pdf"></i> PDF</a></li>
+                        <li><a href="#"><i class="fusion-csv"></i> CSV</a></li>
+                        <li><a href="#"><i class="fusion-copy"></i> Copy</a></li>
+                        <li><a href="#"><i class="fusion-print"></i> Print</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn w-100" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Manage Columns -->
+    <div class="modal fade" id="manageColModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Manage Columns</span>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled column-list">
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Checklist
+                            ID</li>
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Start
+                            Date</li>
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>End Date</li>
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Auditee
+                            ID</li>
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Team
+                            Leader</li>
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Audit
+                            Status</li>
+                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Created
+                            By</li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn w-100" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+        <div class="spiner"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.touchwipe.min.js"></script>
+    <script src="assets/js/autocomplete.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script>
+        autocomplete(document.getElementById("searchCountry"), countries);
+    </script>
+</body>
+
+</html>

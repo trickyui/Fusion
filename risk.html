@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>|| Fusion ||</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/token-input.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="clearfix">
+        <ul class="pull-left list-unstyled left-nav">
+            <li><a class="icon-btn nav-open"><i class="material-icons">menu</i></a></li>
+            <li><a href="#" id="_back" class="icon-btn"><i class="material-icons">keyboard_backspace</i></a></li>
+            <li>Risk</li>
+        </ul>
+        <nav id="navigation">
+            <div class="nav-header clearfix">
+                <div class="text-right"><a href="#" class="nav-close"><i class="material-icons">clear</i></a></div>
+                <div class="col-sm-6 col-xs-6">
+                    <img src="assets/images/fusion-logo.svg" alt="Fusion" class="img-responsive logo">
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <ul class="list-unstyled text-right">
+                        <li>Hi Vikash</li>
+                        <li><a href="#" data-toggle="modal" data-target="#changePassword">Change
+                                Password</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="landing.html"><img src="assets/images/home.svg" alt="Home">Home</a></li>
+                <li><a href="action-plan.html"><img src="assets/images/action-plan.svg" alt="Action Plan">Action Plan</a></li>
+                <li><a href="dox.html"><img src="assets/images/dox.svg" alt="Documents">Documents</a></li>
+                <li><a href="#"><img src="assets/images/maintenance.svg" alt="Maintenance">Maintenance</a></li>
+                <li><a href="audit-grid.html"><img src="assets/images/quality.svg" alt="Quality">Quality</a></li>
+                <li><a href="records-personnel-pv.html"><img src="assets/images/records.svg" alt="Records">Records</a></li>
+                <li><a href="risk.html"><img src="assets/images/risk.svg" alt="Risk">Risk</a></li>
+                <li><a href="roster.html"><img src="assets/images/roster.svg" alt="Roster">Roster</a></li>
+                <li><a href="#"><img src="assets/images/safety.svg" alt="Safety">Safety</a></li>
+                <li><a href="users.html"><img src="assets/images/user.svg" alt="Users">Users</a></li>
+            </ul>
+        </nav>
+        <div class="pull-right">
+            <div class="dropdown pull-right">
+                <a href="#" class="dropdown-toggle icon-btn" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal" data-target="#addRisk">Add Risk</a></li>
+                    <li class="divider"></li>
+                    <li class="active"><a href="#">Risk</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#attachments">Attachment</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#commentsModal">Comments</a></li>
+                    <li><a href="#">Source</a></li>
+                    <li><a href="#">Report</a></li>
+                </ul>
+            </div>
+            <div class="dropdown pull-right">
+                <a href="#" class="dropdown-toggle icon-btn" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">All</a></li>
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Date Created <i class="material-icons small">arrow_downward</i></a></li>
+                    <li><a href="#">Date Created <i class="material-icons small">arrow_upward</i></a></li>
+                </ul>
+            </div>
+            <div class="dropdown pull-right">
+                <a href="#" class="dropdown-toggle icon-btn" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Owner</a></li>
+                    <li><a href="#">Accountable Person</a></li>
+                    <li class="active"><a href="#">Category</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="panelOne" class="panel-1 swipeNav hidden" data-name="risk">
+            <div class="wrapper">
+                <ul class="list-unstyled item-list">
+                    <li><a href="#" class="active">All Risk</a></li>
+                    <li><a href="#">Human</a></li>
+                    <li><a href="#">Organizational</a></li>
+                    <li><a href="#">Technical - Aerodrome</a></li>
+                    <li><a href="#">Technical - Air Navigation</a></li>
+                    <li><a href="#">Technical - Air Operation</a></li>
+                    <li><a href="#">Technical - Desing and Manufacturing</a></li>
+                    <li><a href="#">Test NB</a></li>
+                    <li><a href="#">Test New Build onlive</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="panelTwo" class="panel-2 hidden" data-name="risk">
+            <div class="wrapper">
+                <ul class="list-unstyled item-list">
+                    <li>
+                        <a href="#" class="active">
+                            <div class="item-details">
+                                <div class="item-prop clearfix">
+                                    <div class="pull-left w-70 item-name">Risk 2536</div>
+                                    <div class="pull-right item-date w-30 text-right">18 Aug 2017</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="pull-left w-70 item-desc">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.</div>
+                                    <div class="pull-right item-icons w-30 text-right">
+                                        <i class="material-icons lens" title="Class" style="color: #ff0000">lens</i>
+                                        <i class="material-icons lens" title="Status" style="color: #1e88e5">lens</i>
+                                        <i class="material-icons" title="Bookmark">bookmark</i>
+                                        <i class="material-icons attachment" title="attachment">attach_file</i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item-details">
+                                <div class="item-prop clearfix">
+                                    <div class="pull-left w-70 item-name">Risk 2536</div>
+                                    <div class="pull-right item-date w-30 text-right">18 Aug 2017</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="pull-left w-70 item-desc">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.</div>
+                                    <div class="pull-right item-icons w-30 text-right">
+                                        <i class="material-icons lens" title="Class" style="color: #ff0000">lens</i>
+                                        <i class="material-icons lens" title="Status" style="color: #1e88e5">lens</i>
+                                        <i class="material-icons" title="Bookmark">bookmark</i>
+                                        <i class="material-icons attachment" title="attachment">attach_file</i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item-details">
+                                <div class="item-prop clearfix">
+                                    <div class="pull-left w-70 item-name">Risk 2536</div>
+                                    <div class="pull-right item-date w-30 text-right">18 Aug 2017</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="pull-left w-70 item-desc">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.</div>
+                                    <div class="pull-right item-icons w-30 text-right">
+                                        <i class="material-icons lens" title="Class" style="color: #ff0000">lens</i>
+                                        <i class="material-icons lens" title="Status" style="color: #1e88e5">lens</i>
+                                        <i class="material-icons" title="Bookmark">bookmark</i>
+                                        <i class="material-icons attachment" title="attachment">attach_file</i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item-details">
+                                <div class="item-prop clearfix">
+                                    <div class="pull-left w-70 item-name">Risk 2536</div>
+                                    <div class="pull-right item-date w-30 text-right">18 Aug 2017</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="pull-left w-70 item-desc">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.</div>
+                                    <div class="pull-right item-icons w-30 text-right">
+                                        <i class="material-icons lens" title="Class" style="color: #ff0000">lens</i>
+                                        <i class="material-icons lens" title="Status" style="color: #1e88e5">lens</i>
+                                        <i class="material-icons" title="Bookmark">bookmark</i>
+                                        <i class="material-icons attachment" title="attachment">attach_file</i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="panelThree" class="panel-3" data-name="risk">
+            <div class="wrapper form-container pb-50">
+                <ul class="list-unstyled">
+                    <li class="list-items">
+                        <div class="form-card">
+                            <h3 class="form-header active">File Details</h3>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <ul class="list-unstyled column-list">
+                                        <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Bookmark</li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <label>Risk ID <span class="sup text-danger">*</span></label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Status</label>
+                                    <select class="form-control">
+                                        <option>Active</option>
+                                        <option>Close</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Risk Owner <span class="sup text-danger">*</span></label>
+                                    <select class="form-control">
+                                        <option value="">Select</option>
+                                        <option value="">Allen Berry</option>
+                                        <option value="">Anne Hathway</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Accountable <span class="sup text-danger">*</span></label>
+                                    <select class="form-control">
+                                        <option value="">Select</option>
+                                        <option value="">Allen Berry</option>
+                                        <option value="">Anne Hathway</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Date Created <span class="sup text-danger">*</span></label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Date Updated <span class="sup text-danger">*</span></label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>CC</label>
+                                    <div class="token-wrapper">
+                                        <input type="text" name="" class="form-control" data-name="token-input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-items">
+                        <div class="form-card">
+                            <h3 class="form-header active">Hazard</h3>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label>Hazard <span class="sup text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search here...">
+                                        <div class="input-group-addon"><i class="material-icons" data-toggle="modal"
+                                                data-target="#hazard">keyboard_arrow_right</i></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Location</label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Lat Long</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon"><i class="material-icons" data-toggle="modal"
+                                                data-target="#addLocation">location_on</i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-items">
+                        <div class="form-card">
+                            <h3 class="form-header active">Risk Assessment</h3>
+                            <div class="form-body">
+                                <div class="form-group clearfix">
+                                    <a href="#" data-toggle="modal" data-target="#riskMatrix" class="d-ib"><i class="material-icons primary-icon">iso</i>Calculate
+                                        Risk</a>
+                                    <span class="chips pull-right" style="background-color: #ff0000;">Scheduled (3000)</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Risk</label>
+                                    <div class="token-wrapper">
+                                        <input type="text" name="" class="form-control" data-name="token-input">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <div class="textarea-wrapper">
+                                        <textarea class="form-control" maxlength="1000"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-items">
+                        <div class="form-card">
+                            <h3 class="form-header active">Risk Mitigation</h3>
+                            <div class="form-body">
+                                <div class="form-group clearfix">
+                                    <a href="#" class="d-ib"  data-toggle="modal" data-target="#riskMatrix"><i class="material-icons primary-icon">iso</i>Risk
+                                        Mitigation</a>
+                                    <span class="chips pull-right" style="background-color: purple;">Maximum (3000)</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Implemented</label>
+                                    <div class="textarea-wrapper">
+                                        <textarea class="form-control" maxlength="1000"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Recommended</label>
+                                    <div class="textarea-wrapper">
+                                        <textarea class="form-control" maxlength="1000"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Modal Add Risk -->
+    <div class="modal fade" id="addRisk" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">New Action Plan</span>
+                </div>
+                <div class="modal-body form-container">
+                    <ul class="list-unstyled">
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header active">File Details</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <ul class="list-unstyled column-list">
+                                            <li><label class="switch"><input type="checkbox"> <span class="slider"></span></label>Bookmark</li>
+                                        </ul>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Risk ID <span class="sup text-danger">*</span></label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <select class="form-control">
+                                            <option>Active</option>
+                                            <option>Close</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Risk Owner <span class="sup text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="">Allen Berry</option>
+                                            <option value="">Anne Hathway</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Accountable <span class="sup text-danger">*</span></label>
+                                        <select class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="">Allen Berry</option>
+                                            <option value="">Anne Hathway</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Date Created <span class="sup text-danger">*</span></label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Date Updated <span class="sup text-danger">*</span></label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CC</label>
+                                        <div class="token-wrapper">
+                                            <input type="text" name="" class="form-control" data-name="token-input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header active">Hazard</h3>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label>Hazard <span class="sup text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search here...">
+                                            <div class="input-group-addon"><i class="material-icons" data-toggle="modal"
+                                                    data-target="#hazard">keyboard_arrow_right</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Location</label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Lat Long</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-addon"><i class="material-icons" data-toggle="modal"
+                                                    data-target="#addLocation">location_on</i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header active">Risk Assessment</h3>
+                                <div class="form-body">
+                                    <div class="form-group clearfix">
+                                        <a href="#" class="d-ib"><i class="material-icons primary-icon">iso</i>Calculate
+                                            Risk</a>
+                                        <span class="chips pull-right" style="background-color: #ff0000;">Scheduled
+                                            (3000)</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Risk</label>
+                                        <div class="token-wrapper">
+                                            <input type="text" name="" class="form-control" data-name="token-input">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div class="form-card">
+                                <h3 class="form-header active">Risk Mitigation</h3>
+                                <div class="form-body">
+                                    <div class="form-group clearfix">
+                                        <a href="#" class="d-ib"><i class="material-icons primary-icon">iso</i>Risk
+                                            Mitigation</a>
+                                        <span class="chips pull-right" style="background-color: purple;">Maximum (3000)</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Implemented</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Recommended</label>
+                                        <div class="textarea-wrapper">
+                                            <textarea class="form-control" maxlength="1000"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Hazard -->
+    <div class="modal fade" id="hazard" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Select</span>
+                </div>
+                <div class="modal-body">
+                    Filter will be here.
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Location -->
+    <div class="modal fade" id="addLocation" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Location</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search here...">
+                            <div class="input-group-addon"><i class="material-icons" data-toggle="modal" data-target="#addLocation">search</i></div>
+                        </div>
+                    </div>
+                    <div id="map" class="map-area"></div>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Attachments -->
+    <div class="modal fade" id="attachments" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Attachments</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="btn btn-primary upload w-100">
+                            Browse Files
+                            <input type="file" name="" id="fileUpload" accept="image/*" multiple>
+                        </div>
+                    </div>
+                    <ul id="files" class="list-unstyled file-list">
+                    </ul>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Risk Matrix -->
+    <div class="modal fade" id="riskMatrix" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Risk Matrix</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <table class="risk-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-title"><span class="left-head">Saverity</span><span class="top-head">Probability</span></th>
+                                    <th class="head">
+                                        <div>90</div>
+                                        <div>Certain</div>
+                                    </th>
+                                    <th class="head">
+                                        <div>70</div>
+                                        <div>Frequent</div>
+                                    </th>
+                                    <th class="head">
+                                        <div>50</div>
+                                        <div>Likely</div>
+                                    </th>
+                                    <th class="head">
+                                        <div>30</div>
+                                        <div>Possible</div>
+                                    </th>
+                                    <th class="head">
+                                        <div>10</div>
+                                        <div>Exceptional</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="head">
+                                        <div>20</div>
+                                        <div>Catastrophic</div>
+                                    </td>
+                                    <td>
+                                        <div>1800</div>
+                                    </td>
+                                    <td>
+                                        <div>1400</div>
+                                    </td>
+                                    <td>
+                                        <div>1000</div>
+                                    </td>
+                                    <td>
+                                        <div>600</div>
+                                    </td>
+                                    <td>
+                                        <div>200</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="head">
+                                        <div>40</div>
+                                        <div>Major</div>
+                                    </td>
+                                    <td>
+                                        <div>3600</div>
+                                    </td>
+                                    <td>
+                                        <div>2800</div>
+                                    </td>
+                                    <td>
+                                        <div>2000</div>
+                                    </td>
+                                    <td>
+                                        <div>1200</div>
+                                    </td>
+                                    <td>
+                                        <div>400</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="head">
+                                        <div>60</div>
+                                        <div>Significant</div>
+                                    </td>
+                                    <td>
+                                        <div>5400</div>
+                                    </td>
+                                    <td>
+                                        <div>4200</div>
+                                    </td>
+                                    <td>
+                                        <div>3000</div>
+                                    </td>
+                                    <td>
+                                        <div>1800</div>
+                                    </td>
+                                    <td>
+                                        <div>600</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="head">
+                                        <div>80</div>
+                                        <div>Minor</div>
+                                    </td>
+                                    <td>
+                                        <div>7200</div>
+                                    </td>
+                                    <td>
+                                        <div>5600</div>
+                                    </td>
+                                    <td>
+                                        <div>4000</div>
+                                    </td>
+                                    <td>
+                                        <div>2400</div>
+                                    </td>
+                                    <td>
+                                        <div>800</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="head">
+                                        <div>100</div>
+                                        <div>Negligible</div>
+                                    </td>
+                                    <td>
+                                        <div>9000</div>
+                                    </td>
+                                    <td>
+                                        <div>7000</div>
+                                    </td>
+                                    <td>
+                                        <div>5000</div>
+                                    </td>
+                                    <td>
+                                        <div>3000</div>
+                                    </td>
+                                    <td>
+                                        <div>1000</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <ul class="list-inline risk-indicators">
+                            <li><i class="material-icons item-indicator" style="color: #fde937">lens</i> Minimum</li>
+                            <li><i class="material-icons item-indicator" style="color: #8ac147">lens</i> Moderately</li>
+                            <li><i class="material-icons item-indicator" style="color: #8f4098">lens</i> Maximum</li>
+                            <li><i class="material-icons item-indicator" style="color: #ef4438">lens</i> Critical</li>
+                            <li><i class="material-icons item-indicator" style="color: #afbdc4">lens</i> Preliminary</li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <label>Defence (Z)</label>
+                        <select class="form-control">
+                            <option>Select</option>
+                            <option>D1-Null</option>
+                            <option>D2-1/4</option>
+                            <option>D2-1/2</option>
+                            <option>D2-2/3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer clearfix">
+                    <button type="button" class="btn left" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn right">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Comments Modal -->
+    <div class="modal fade" id="commentsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">clear</i></button>
+                    <span class="modal-title">Comments</span>
+                </div>
+                <div class="modal-body chatbox">
+                    <div class="post-area">
+                        <ul class="list-unstyled">
+                            <li class="left">
+                                <div class="chat">Your Comment</div>
+                            </li>
+                            <li class="right">
+                                <div class="chat">My Comment</div>
+                            </li>
+                            <li class="left">
+                                <div class="chat">Your Comment</div>
+                            </li>
+                            <li class="right">
+                                <div class="chat">My Comment</div>
+                            </li>
+                            <li class="left">
+                                <div class="chat">Your Comment</div>
+                            </li>
+                            <li class="right">
+                                <div class="chat">My Comment</div>
+                            </li>
+                            <li class="left">
+                                <div class="chat">Your Comment</div>
+                            </li>
+                            <li class="right">
+                                <div class="chat">My Comment</div>
+                            </li>
+                            <li class="left">
+                                <div class="chat">Your Comment</div>
+                            </li>
+                            <li class="right">
+                                <div class="chat">My Comment</div>
+                            </li>
+                            <li class="left">
+                                <div class="chat">
+                                    <div class="comment-details">
+                                        <div>Ishita Rawat</div>
+                                        <div>06-Dec-2018 05:43</div>
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                            </li>
+                            <li class="right">
+                                <div class="chat">
+                                    <div class="comment-details">
+                                        <div>Ishita Rawat</div>
+                                        <div>06-Dec-2018 05:43</div>
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                            </li>
+                            <li class="right">
+                                <div class="chat"><i class="material-icons">insert_drive_files</i>File name</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-area clearfix">
+                        <textarea class="form-control small post-box pull-left" rows="1" placeholder="Type comments..."></textarea>
+                        <a href="#" class="pull-left post-btn round-btn primary-bg"><i class="material-icons">send</i></a>
+                        <a href="#" class="pull-left round-btn secondary-bg"><i class="material-icons">attach_file</i><input
+                                type="file" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="spiner"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.touchwipe.min.js"></script>
+    <script src="assets/js/jquery.tokeninput.js"></script>
+    <script>
+
+        $(document).on('click', '.risk-table div', function () {
+            if (!$(this).parent().hasClass('head')) {
+                $('.risk-table div').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+        $(function () {
+            $("[data-name='token-input']").tokenInput(
+                [
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                    { name: "JavaScript" },
+                ],
+                {
+                    onReady: function () {
+                        var i = 0;
+                        $('.token-wrapper').each(function () {
+                            $(this).find('input#token-input-').attr('id', 'token-input-' + i++);
+                        });
+                    }
+                }
+            );
+        });
+    </script>
+    <script src="assets/js/common.js"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8f_k4ZyIpS5Kb9Y2AHYGdhUQM-fWESa4&callback=initMap"
+        async defer></script>
+</body>
+
+</html>

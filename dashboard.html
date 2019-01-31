@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>|| Fusion ||</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/fullcalendar.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="clearfix">
+        <ul class="pull-left list-unstyled left-nav">
+            <li><a class="icon-btn nav-open"><i class="material-icons">menu</i></a></li>
+            <li><a href="#" id="_back" class="icon-btn"><i class="material-icons">keyboard_backspace</i></a></li>
+            <li>Quality</li>
+            <li><i class="material-icons">assessment</i></li>
+        </ul>
+        <nav id="navigation">
+            <div class="nav-header clearfix">
+                <div class="text-right"><a href="#" class="nav-close"><i class="material-icons">clear</i></a></div>
+                <div class="col-sm-6 col-xs-6">
+                    <img src="assets/images/fusion-logo.svg" alt="Fusion" class="img-responsive logo">
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <ul class="list-unstyled text-right">
+                        <li>Hi Vikash</li>
+                        <li><a href="#" data-toggle="modal" data-target="#changePassword">Change
+                                Password</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="landing.html"><img src="assets/images/home.svg" alt="Home">Home</a></li>
+                <li><a href="action-plan.html"><img src="assets/images/action-plan.svg" alt="Action Plan">Action Plan</a></li>
+                <li><a href="dox.html"><img src="assets/images/dox.svg" alt="Documents">Documents</a></li>
+                <li><a href="#"><img src="assets/images/maintenance.svg" alt="Maintenance">Maintenance</a></li>
+                <li><a href="audit-grid.html"><img src="assets/images/quality.svg" alt="Quality">Quality</a></li>
+                <li><a href="records-personnel-pv.html"><img src="assets/images/records.svg" alt="Records">Records</a></li>
+                <li><a href="risk.html"><img src="assets/images/risk.svg" alt="Risk">Risk</a></li>
+                <li><a href="roster.html"><img src="assets/images/roster.svg" alt="Roster">Roster</a></li>
+                <li><a href="#"><img src="assets/images/safety.svg" alt="Safety">Safety</a></li>
+                <li><a href="users.html"><img src="assets/images/user.svg" alt="Users">Users</a></li>
+            </ul>
+        </nav>
+        <div class="pull-right">
+            <div class="pull-right dropdown">
+                <a href="#" class="dropdown-toggle icon-btn" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="audit-grid.html">Audit</a></li>
+                    <li><a href="checklist-grid.html">Checklist</a></li>
+                    <li><a href="auditee.html">Auditee</a></li>
+                    <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">View by Auditee</a></li>
+                    <li><a href="#">View by Auditor</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="panelThree" class="panel-3" data-name="auditee">
+            <div class="wrapper">
+                <div class="form-group">
+                    <div id='fullCalendar' class="dashboard-calendar"></div>
+                </div>
+                <ul class="list-unstyled list-inline">
+                    <li><i class="material-icons item-indicator">lens</i> In-Process</li>
+                    <li><i class="material-icons item-indicator">lens</i> Scheduled</li>
+                    <li><i class="material-icons item-indicator">lens</i> Overdue</li>
+                    <li><i class="material-icons item-indicator">lens</i> Closed</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="loader">
+        <div class="spiner"></div>
+    </div>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.touchwipe.min.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#fullCalendar').fullCalendar({
+                header: {
+                    left: 'prev',
+                    center: 'title',
+                    right: 'next'
+                },
+                // defaultDate: '2018-03-12',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    {
+                        title: 'Long Event',
+                        start: '2018-11-01',
+                        end: '2018-11-07'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2018-11-14',
+                        end: '2018-11-22'
+                    }
+                ]
+            });
+
+        });
+
+    </script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>
